@@ -14,6 +14,15 @@ page (5-30), produced by `Books-Authored`'s
 `generate-illustration-batch.yml` workflow. Filenames match the page
 numbers in `Books-Authored`'s `manuscript.md`.
 
+Front/back matter (pages 1, 3, 4, 31 — page 2 and 32 are optional/
+no-illustration per `manuscript.md`) also live in `pages/page-NN.png`,
+generated one-off via the single-page `generate-illustration.yml`
+workflow with a composed `--prompt` (these pages have no `Prompt:` line
+in `manuscript.md`, so `generate_batch.py` can't reach them).
+
+`cover/front-illustration.png` — the front-cover illustration for
+"The One Thumb Pirate Cover" Canva file, same generation path.
+
 ## Usage
 
 Raw URL for any page:
